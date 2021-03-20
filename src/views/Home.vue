@@ -82,10 +82,19 @@ export default {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
+  align-items: top;
+  margin-bottom: 30px;
 }
 
 .filter-box {
   width: 200px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+h1 {
+  margin: 50px;
 }
 </style>

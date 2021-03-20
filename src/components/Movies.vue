@@ -1,10 +1,13 @@
 <template>
     <div class="movies">
-        <div v-for="movie in movies" :key="movie.id">
+        <!-- <div v-for="movie in movies" :key="movie.id">
             <img :src="'images/' +movie.image">
             <h3>{{movie.title}}</h3>
-            <h2>test</h2>
-        </div>
+        </div> -->
+        <router-link v-for="movie in movies" :key="movie.id" :to="'/movie/' + movie.id" style="display: inline-block;text-decoration:none;">
+            <img :src="'images/' +movie.image">
+            <h3>{{movie.title}}</h3>
+        </router-link>
     </div>
 </template>
 
@@ -21,4 +24,21 @@ export default {
 /* .movie {
     width: 300px;
 } */
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+h3 {
+    color: white;
+    text-decoration: none;
+}
+
 </style>

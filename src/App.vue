@@ -14,12 +14,16 @@
 </template>
 
 <style>
+html {
+  background-color: rgb(41, 39, 39);
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  color: white;
 }
 
 #nav {
@@ -37,6 +41,13 @@
 
 .footer {
   background-color: rgb(130, 201, 168);
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+.footer p {
+  margin-bottom: 0px;
 }
 </style>
 
