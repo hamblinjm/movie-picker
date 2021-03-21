@@ -39,6 +39,9 @@
           <input type="radio" id="scifi" value="scifi" v-model="genre">
           <label for="two">Scifi</label>
           <br>
+          <input type="radio" id="fantasy" value="fantasy" v-model="genre">
+          <label for="two">Fantasy</label>
+          <br>
           <span>Selected: {{ genre }}</span>
         </div>
 
@@ -122,6 +125,11 @@ h3 {
 
 h1 {
   margin: 50px;
+  color: rgb(130, 201, 168);
+}
+
+hr {
+  background-color: rgb(130, 201, 168);
 }
 
 #clear {
@@ -130,5 +138,10 @@ h1 {
 
 hr {
   /* width: 50%; */
+}
+
+button {
+  font-family: 'Staatliches', cursive;
+  width: 100px;
 }
 </style>

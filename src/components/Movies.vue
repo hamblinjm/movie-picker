@@ -39,6 +39,7 @@ li a {
 h3 {
     color: white;
     text-decoration: none;
+    width: 182px;
 }
 
 </style>

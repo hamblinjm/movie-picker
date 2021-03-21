@@ -8,7 +8,7 @@
     <router-view/>
     <div class="footer">
       <a href="https://github.com/hamblinjm/movie-picker">GitHub Repo</a>
-      <p>Images and snynopsis from IMDb and homeblogger.com</p>
+      <p>Images and snynopsis from IMDb</p>
     </div>
   </div>
 </template>
@@ -18,8 +18,8 @@ html {
   background-color: rgb(41, 39, 39);
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  font-family: 'Bebas Neue', cursive;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  /* font-family: 'Bebas Neue', cursive; */
   font-family: 'Staatliches', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,12 +44,13 @@ html {
 .footer {
   background-color: rgb(130, 201, 168);
   padding: 10px;
-  font-size: 12px;
+  font-size: 15px;
   margin-top: 50px;
 }
 
 .footer p {
   margin-bottom: 0px;
+  font-family: 'Staatliches', cursive;
 }
 
 h1,h2,h3 {
@@ -62,7 +63,9 @@ h1 {
 }
 
 p {
-  font-family: 
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  /* letter-spacing: 1.5px; */
+  font-family: 'Roboto Slab', serif;
 }
 </style>
 

@@ -8,6 +8,7 @@
       <p>Genre: {{movie.genre}}</p>
       <p>IMDb Rating: {{movie.imbd_rating}} / 10</p>
       <p>{{movie.synopsis}}</p>
+      <router-link to="/">Back</router-link>
     </div>
   </div>
 </div>
@@ -64,6 +65,11 @@ img {
   /* margin-bottom: 30px; */
   width: 80%;
   margin: 0 auto;
+}
+
+a {
+  color: #42b983;
+  font-family: 'Roboto Slab', serif;
 }
 </style>
 

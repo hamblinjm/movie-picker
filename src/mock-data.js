@@ -81,40 +81,40 @@ let mock = [{
     genre: "scifi",
     image: "martian.jpg",
     synopsis: "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive." 
+  },{
+    id: 9,
+    title: "Ella Enchanted",
+    mpa_rating: "PG",
+    imbd_rating: 6.3,
+    genre: "comedy",
+    image: "ella-enchanted.jpg",
+    synopsis: "Ella is under a spell to be constantly obedient, a fact she must hide from her new stepfamily in order to protect the prince of the land, her friend for whom she's falling." 
+  },{
+    id: 10,
+    title: "Stardust",
+    mpa_rating: "PG-13",
+    imbd_rating: 7.6,
+    genre: "fantasy",
+    image: "stardust.jpg",
+    synopsis: "In a countryside town bordering on a magical land, a young man makes a promise to his beloved that he'll retrieve a fallen star by venturing into the magical realm." 
+  },{
+    id: 11,
+    title: "The Fellowship of the Ring",
+    mpa_rating: "PG-13",
+    imbd_rating: 8.8,
+    genre: "fantasy",
+    image: "lotr.jpg",
+    synopsis: "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron." 
+  },{
+    id: 12,
+    title: "The Professor and the Madman",
+    mpa_rating: "other",
+    imbd_rating: 7.3,
+    genre: "drama",
+    image: "professor.jpg",
+    synopsis: "Professor James Murray begins work compiling words for the first edition of the Oxford English Dictionary in the mid-19th century, and receives over 10,000 entries from a patient at Broadmoor Criminal Lunatic Asylum, Dr. William Minor." 
   },
-// {
-//     id: 9,
-//     title: "Hidden Figures",
-//     mpa_rating: mpaEnums.pg,
-//     imbd_rating: 7.8,
-//     genre: genre.drama,
-//     image: "hidden-figures.jpg",
-//     synopsis: "The story of a team of female African-American mathematicians who served a vital role in NASA during the early years of the U.S. space program." 
-//   },{
-//     id: 10,
-//     title: "Hidden Figures",
-//     mpa_rating: mpaEnums.pg,
-//     imbd_rating: 7.8,
-//     genre: genre.drama,
-//     image: "hidden-figures.jpg",
-//     synopsis: "The story of a team of female African-American mathematicians who served a vital role in NASA during the early years of the U.S. space program." 
-//   },{
-//     id: 11,
-//     title: "Hidden Figures",
-//     mpa_rating: mpaEnums.pg,
-//     imbd_rating: 7.8,
-//     genre: genre.drama,
-//     image: "hidden-figures.jpg",
-//     synopsis: "The story of a team of female African-American mathematicians who served a vital role in NASA during the early years of the U.S. space program." 
-//   },{
-//     id: 12,
-//     title: "Hidden Figures",
-//     mpa_rating: mpaEnums.pg,
-//     imbd_rating: 7.8,
-//     genre: genre.drama,
-//     image: "hidden-figures.jpg",
-//     synopsis: "The story of a team of female African-American mathematicians who served a vital role in NASA during the early years of the U.S. space program." 
-//   },{
+//   {
 //     id: 13,
 //     title: "Hidden Figures",
 //     mpa_rating: mpaEnums.pg,
