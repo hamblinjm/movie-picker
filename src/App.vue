@@ -19,6 +19,8 @@ html {
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Staatliches', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -48,6 +50,19 @@ html {
 
 .footer p {
   margin-bottom: 0px;
+}
+
+h1,h2,h3 {
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: 
 }
 </style>
 

@@ -38,7 +38,7 @@ let mock = [{
     title: "A Quiet Place",
     mpa_rating: "PG-13",
     imbd_rating: 7.5,
-    genre: "drama",
+    genre: "thriller",
     image: "quiet-place.jpg",
     synopsis: "In a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive hearing." 
   },{

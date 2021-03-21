@@ -1,22 +1,23 @@
 <template>
   <div class="home">
-    <img class="home-img" src="/images/main-cropped.jpg">
+    <!-- <img class="home-img" src="/images/main-cropped.jpg"> -->
     <h1>Movie Picker</h1>
+    <hr/>
     <div class="filter-wrapper">
       <h2>Filter by:</h2>
       <div class="filter-grid">
         <div class="filter-box">
           <h3>MPA Rating</h3>
-          <input type="radio" id="g" value="g" v-model="mpa">
+          <input type="radio" id="g" value="G" v-model="mpa">
           <label for="g">G</label>
           <br>
-          <input type="radio" id="pg" value="pg" v-model="mpa">
+          <input type="radio" id="pg" value="PG" v-model="mpa">
           <label for="pg">PG</label>
           <br>
-          <input type="radio" id="pg13" value="pg13" v-model="mpa">
+          <input type="radio" id="pg13" value="PG-13" v-model="mpa">
           <label for="pg13">PG-13</label>
           <br>
-          <input type="radio" id="other" value="other" v-model="mpa">
+          <input type="radio" id="other" value="Other" v-model="mpa">
           <label for="other">Other</label>
           <br>
           <span>Selected: {{ mpa }}</span>
@@ -40,7 +41,10 @@
           <br>
           <span>Selected: {{ genre }}</span>
         </div>
+
       </div>
+      <button id="clear" v-on:click="clear">Clear Filters</button>
+
     </div>
     <MovieList :movies="movies" />
   </div>
@@ -64,8 +68,30 @@ export default {
   },
   computed: {
     movies() {
-      return this.$root.$data.movies; //TODO FIX THIS
-      // .filter(movie => movie.mpa_rating === mpa);
+      let filteredMovies = this.$root.$data.movies;
+      // if (this.mpa === '' && this.genre === '') {
+      //   return this.$root.$data.movies;
+      // } else if (this.mpa === '') {
+      //   return this.$root.$data.movies.filter(movie => movie.genre === this.genre);
+      // }
+
+      if (this.mpa !== '') {
+        filteredMovies = filteredMovies.filter(movie => movie.mpa_rating === this.mpa);
+      }
+      if (this.genre !== '') {
+        filteredMovies = filteredMovies.filter(movie => movie.genre === this.genre);
+      }
+      return filteredMovies;
+    }
+  },
+  methods: {
+    select(mpa, genre) {
+      this.mpa = mpa;
+      this.genre = genre;
+    },
+    clear() {
+      this.mpa = '';
+      this.genre = '';
     }
   }
 }
@@ -96,5 +122,13 @@ h3 {
 
 h1 {
   margin: 50px;
+}
+
+#clear {
+  margin-bottom: 30px;
+}
+
+hr {
+  /* width: 50%; */
 }
 </style>
